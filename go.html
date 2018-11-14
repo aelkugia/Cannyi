@@ -1,0 +1,25 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs = 'sourceType: webcam; debugUIEnabled: false;'>
+
+<!--     	<a-assets>
+	  		<img id="my-image" src="img/text.jpg">
+	  	</a-assets>
+
+	  	<a-image src="#my-image"></a-image> -->
+
+	  	<a-marker preset="hiro">
+
+	 	<a-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Store_coupons_are_coupon-based_discounts_offered_for_a_particular_item_or_group_of_items.jpg/116px-Store_coupons_are_coupon-based_discounts_offered_for_a_particular_item_or_group_of_items.jpg" rotation="-90 0 0"></a-image>
+
+	 	<a-text value="Screenshot to capture!" color="#ffffff" position="-1.5 1 -1" rotation="-90 0 0" scale="1.5 1.5 1.5"></a-text>
+
+	  	</a-marker>
+
+  	<a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
